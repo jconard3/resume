@@ -1,0 +1,103 @@
+%%%%%
+% Jordan Conard
+% Resume LaTeX Source
+% jordan.conard3@gmail.com
+% github.com/jconard3/resume
+%%%%%
+
+\documentclass[letterpaper]{article}
+\usepackage{enumitem}
+
+%-----Dimensions-----%
+\usepackage[a4paper, centering, vmargin=0.5in]{geometry}
+
+%-----Document-----%
+\begin{document}
+\pagestyle{empty} % Remove page numbering
+
+
+%-----Name and Contact-----%
+\begin{center}
+    {\Huge Jordan Conard}\\~\\
+    jordan.conard3@gmail.com\\
+    github.com/jconard3
+\end{center}
+
+%-----Work Experience-----%
+\section*{Work Experience}
+\begin{tabular}{l|l}
+{Feb '18 - \emph{Current}} & Security Operations Engineer - MailChimp, Atlanta
+\end{tabular}
+\begin{itemize}[noitemsep]
+	\item Designed and lead interdepartmental projects to drive infrastructure security initiatives and reduce risk in the infrastructure.
+	\item Increased collaboration and communication between Security and other Operations teams by reviewing new projects and assisting teams.
+	\item Provided subject matter expertise in infrastructure security to on-call incident response teams.
+	\item Analyzed third party penetration test findings and coordinated subsequent remediation projects.
+\end{itemize}
+\begin{tabular}{l|l}
+{Jan '15 - Feb '18} & Systems Engineer - MailChimp, Atlanta\\
+\end{tabular}
+\begin{itemize}[noitemsep]
+	\item Scaled infrastructure, monitoring and engineering teams to support a magnitude increase in servers over three years.
+	\item Migrated dozens of hosted servers from Softlayer to collocated data centers which saved the company thousands and reduced security risk.
+	\item Provided overnight on-call support for infrastructure systems, internal services and public facing sites.
+\end{itemize}
+
+%-----Projects-----%
+\section*{Projects}
+\subsubsection*{ScaleFT Adoption for SSH Access}
+\begin{itemize}[noitemsep]
+	\item Migrated infrastructure Secure Shell (SSH) access to the ScaleFT plaform, an Okta-based zero-trust model solution.
+	\item Enumerated shortcomings of previous SSH solution, defined acceptance criteria for a new solution and researched potential candidates.
+	\item Identified ScaleFT and performed a proof-of-concept that met all criteria.
+	\item Lead initial project team to adopt the new solution and deprecate the previouus one.
+\end{itemize}
+\subsubsection*{Spectre/Meltdown Mitigation}
+\begin{itemize}[noitemsep]
+	\item Performed initial discovery and research of the Spectre/Meltdown vulnerabilities.
+	\item Assessed risk to the infrastucture and designed the initial response project.
+	\item Lead a five person project team while providing bimonthly updates to senior leadership.
+	\item Successfully mitigated the vulnerabilities to critical infrastructure and designed a secondary follow-up project.
+\end{itemize}
+\subsubsection*{Security Logging and Monitoring}
+\begin{itemize}[noitemsep]
+	\item Configured Amazon Wed Services (AWS) CloudTrail to push sensitive logs from MailChimp's AWS infrastructure into a collocated Elasticsearch cluster.
+	\item Enabled and configured auditd logs across collocated infrastructure to ship to an additional Elasticsearch cluster and used ElastAlert to monitor for potential security anomalies. 
+\end{itemize}
+\subsubsection*{Home GCP Lab}
+\begin{itemize}[noitemsep]
+	\item Created a Kubernetes cluster in Google Kubernetes Engine (GKE) to supplement education into Google Cloud Platform (GCP) and Kubernetes.
+	\item Utilized the Helm package manager to install a VPN, Hashicorp Vault and a Wordpress website.
+	\item Created a repo of bootstrap scripts and Kubernetes manifests to manage the cluster and provide a backup state (https://github.com/jconard3/gcp\_k8). 
+\end{itemize}
+
+%-----Skills-----%
+\section*{Skills}
+\begin{tabular}{rl}
+    Languages: & Go, Python, Bash, Puppet, C, x86/x86\_64, \LaTeX\\
+    Platforms: & CentOS, Ubuntu, Google Cloud Platform, AWS\\
+    Tools: & Elasticsearch, Kubernetes, Docker, Git\\
+\end{tabular}
+
+%-----Lectures-----%
+\section*{Tech Talks}
+\subsubsection*{Intro to Puppet}
+\begin{itemize}[noitemsep]
+	\item An hour long lecture with evolving participatory demo (https://github.com/jconard3/puppet\_demo).
+	\item Introduced the concept of configuration management, idempotence, and declarative programming languages. 
+	\item Described puppet manifests, catalog compilation, architecture, and steps in a typical Puppet run. 
+\end{itemize}
+\subsection*{Create a Personal VPN}
+\begin{itemize}[noitemsep]
+	\item Fifteen minute lightning talk given during a meet-and-greet hosted by the Security team for Cyber Security Awareness Month 2018.
+	\item Showed the basic concepts of a Virtual Private Network (VPN) and how they can be useful for personal security.
+	\item Utilized the OpenVPN Access Server hosted on AWS Marketplace and talked to how self-hosted VPNs can be more secure and just as inexpensive as paid solutions.
+\end{itemize}
+
+%-----Education-----%
+\section*{Education}
+\begin{tabular}{rl}
+    2009 - 2014 & Bachelor of Science in {Computer Engineering}\\
+    & {Georgia Institute of Technology}, Atlanta\\
+\end{tabular}
+\end{document}
