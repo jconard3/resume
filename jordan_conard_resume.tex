@@ -9,7 +9,7 @@
 \usepackage{enumitem}
 
 %-----Dimensions-----%
-\usepackage[a4paper, centering, vmargin=0.5in]{geometry}
+\usepackage[centering, vmargin=0.5in]{geometry}
 
 %-----Document-----%
 \begin{document}
@@ -23,58 +23,64 @@
     jordan.conard3@gmail.com\\
 \end{center}
 
+%-----Objective-----%
+\section*{Objective}
+I am seeking new opportunities to enable others to be more secure against ever-changing security threats. I am passionate about securing emerging cloud-native technologies and developing automation to empower teams. 
+
 %-----Work Experience-----%
 \section*{Work Experience}
 \begin{tabular}{l|l}
-{Feb '18 - \emph{Current}} & Security Operations Engineer - MailChimp, Atlanta
+{Feb '18 - \emph{Current}} & Senior Security Operations Engineer - MailChimp, Atlanta\\
 \end{tabular}
 \begin{itemize}[noitemsep]
-	\item Co-created the Security Operations team to oversee defensive security in the infrastructure and application
-	\item Designed and lead interdepartmental projects to drive security initiatives and reduce risk in the infrastructure
-	\item Increased collaboration and communication between Security and other Operations teams by providing subject matter expertise on new projects
-	\item Commanded security incident responses and assisted on-call teams on security issues
+	\item Created and lead the Security Operations team to oversee defensive security in the Operations department.
+	\item Designed and lead interdepartmental projects to meet security initiatives and reduce risk across the company's infrastructure.
+	\item Increased collaboration and communication between Security and other Operations teams by providing subject matter expertise on new projects.
+	\item Coordinated third-party penetration test engagements and lead mitigation efforts based on test report findings.
+	\item Commanded security incident responses and assisted on-call teams on security issues.
 \end{itemize}
 \begin{tabular}{l|l}
 {Jan '15 - Feb '18} & Systems Engineer - MailChimp, Atlanta\\
 \end{tabular}
 \begin{itemize}[noitemsep]
-	\item Scaled infrastructure, monitoring and engineering teams to support a magnitude increase in servers over three years
-	\item Migrated hundreds of hosted servers from Softlayer to collocated infrastructure to reduce security risk and operational expense
-	\item Oversaw build out of us12 shard from server ordering, installation and configuration, to production code deployment and QA testing
-	\item Provided on-call support for infrastructure, internal services and public facing sites
+	\item Scaled infrastructure, monitoring and tooling to support a magnitude increase in servers over three years.
+	%\item Migrated hundreds of hosted servers from Softlayer to collocated infrastructure to reduce security risk and operational expense.
+	%\item Oversaw build out of a user shard from server ordering, installation and configuration, to production code deployment and QA testing.
+	\item Provided on-call support for infrastructure, internal services and public facing sites.
 \end{itemize}
 
 %-----Projects-----%
-\section*{Projects and Presentations}
-%\subsubsection*{ScaleFT Adoption for SSH Access}
-%\begin{itemize}[noitemsep]
-%	\item Enumerated shortcomings of existing Secure Shell (SSH) access solution, defined acceptance criteria for a new solution and researched potential candidates.
-%	\item Identified ScaleFT, an Okta-based zero-trust model solution and performed a proof-of-concept that met all criteria.
-%	\item Lead initial project team to adopt the new solution and deprecate the previouus one.
-%\end{itemize}
-\subsubsection*{Spectre/Meltdown Mitigation}
+\section*{Projects}
+\subsubsection*{Okta Advanced Server Access Adoption for SSH Access}
 \begin{itemize}[noitemsep]
-	\item Performed initial discovery and research of the Spectre/Meltdown vulnerabilities
-	\item Assessed risk to the infrastructure and designed the initial response project
-	\item Lead a five person project team while providing bimonthly updates to Mailchimp senior leadership
+	\item Enumerated shortcomings of existing Secure Shell (SSH) access solution, defined acceptance criteria for a new solution and researched potential solutions.
+	\item Identified Okta Advanced Server Access (Okta ASA), a zero-trust model solution, and evaluated it through a proof-of-concept test.
+	\item Lead the project team to roll ASA out company-wide and then to deprecate the previous solution.
 \end{itemize}
 \subsubsection*{Security Logging and Monitoring}
 \begin{itemize}[noitemsep]
-	\item Configured Amazon Web Services (AWS) CloudTrail to push sensitive logs from MailChimp's AWS infrastructure into a collocated Elasticsearch cluster
-	\item Enabled and configured auditd logs across collocated infrastructure to ship to an additional Elasticsearch cluster and used ElastAlert to monitor for potential security anomalies
+	\item Implemented security monitoring and alerting in Google Cloud Platform through Forseti and Cloud Security Command Center.
+	\item Advised senior engineering leadership on security best practices during Google Cloud Platform (GCP) adoption.
+	\item Created an Elasticsearch Security Information and Event Management (SIEM) platform to aggregate security logs from software across the company.
 \end{itemize}
-\subsubsection*{Home Lab}
-\begin{itemize}[noitemsep]
-	\item Created and configured a Kubernetes cluster in Google Kubernetes Engine (GKE)
-	\item Utilized the Helm package manager to install a Virtual Private Network (VPN), Hashicorp Vault and a Wordpress website
-	\item Created a repository of bootstrap scripts and Kubernetes manifests to manage the cluster and provide a backup state (https://github.com/jconard3/gcp\_k8)
-\end{itemize}
-\subsubsection*{Intro to Puppet}
-\begin{itemize}[noitemsep]
-	\item Presented a hour long lecture with evolving participatory demo (https://github.com/jconard3/puppet\_demo)
-	\item Introduced concepts of configuration management, idempotence, and declarative languages
-	\item Described puppet manifests, catalog compilation, and architecture in a typical Puppet run
-\end{itemize}
+%\subsubsection*{Spectre/Meltdown Mitigation}
+%\begin{itemize}[noitemsep]
+%	\item Performed initial discovery and research of the Spectre/Meltdown vulnerabilities
+%	\item Assessed risk to the infrastructure and designed the initial response project
+%	\item Lead a five person project team while providing bimonthly updates to Mailchimp senior leadership
+%\end{itemize}
+%\subsubsection*{Home Lab}
+%\begin{itemize}[noitemsep]
+%	\item Created and configured a Kubernetes cluster in Google Kubernetes Engine (GKE)
+%	\item Utilized the Helm package manager to install a Virtual Private Network (VPN), Hashicorp Vault and a Wordpress website
+%	\item Created a repository of bootstrap scripts and Kubernetes manifests to manage the cluster and provide a backup state (https://github.com/jconard3/gcp\_k8)
+%\end{itemize}
+%\subsubsection*{Intro to Puppet}
+%\begin{itemize}[noitemsep]
+%	\item Presented a hour long lecture with evolving participatory demo (https://github.com/jconard3/puppet\_demo)
+%	\item Introduced concepts of configuration management, idempotence, and declarative languages
+%	\item Described puppet manifests, catalog compilation, and architecture in a typical Puppet run
+%\end{itemize}
 % \subsubsection*{Create a Personal VPN}
 % \begin{itemize}[noitemsep]
 % 	\item Fifteen minute lightning talk given during a meet-and-greet hosted by the Security team for Cyber Security Awareness Month 2018
@@ -85,8 +91,8 @@
 %-----Skills-----%
 \section*{Skills}
 \begin{tabular}{rl}
-    Languages: & Go, Python, Bash, Puppet, C, x86/x86\_64, \LaTeX\\
-    Platforms: & CentOS, Ubuntu, Google Cloud Platform, AWS\\
+    Languages: & Go, Python, Bash, Puppet, C\\
+    Platforms: & CentOS, Ubuntu, Google Cloud Platform, Amazon Web Services\\
     Tools: & Elasticsearch, Kubernetes, Docker, Git\\
 \end{tabular}
 
