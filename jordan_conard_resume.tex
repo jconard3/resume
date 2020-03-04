@@ -9,7 +9,7 @@
 \usepackage{enumitem}
 
 %-----Dimensions-----%
-\usepackage[centering, vmargin=0.5in]{geometry}
+\usepackage[centering]{geometry}
 
 %-----Document-----%
 \begin{document}
@@ -24,8 +24,8 @@
 \end{center}
 
 %-----Objective-----%
-\section*{Objective}
-I am seeking new opportunities to enable others to be more secure against ever-changing security threats. I am passionate about securing emerging cloud-native technologies and developing automation to empower teams. 
+%\section*{Objective}
+%I am seeking new opportunities to enable others to be more secure against ever-changing security threats. I am passionate about securing emerging cloud-native technologies and developing automation to empower teams. 
 
 %-----Work Experience-----%
 \section*{Work Experience}
@@ -33,37 +33,40 @@ I am seeking new opportunities to enable others to be more secure against ever-c
 {Feb '18 - \emph{Current}} & Senior Security Operations Engineer - MailChimp, Atlanta\\
 \end{tabular}
 \begin{itemize}[noitemsep]
-	\item Created and lead the Security Operations team to oversee defensive security in the Operations department.
-	\item Designed and lead interdepartmental projects to meet security initiatives and reduce risk across the company's infrastructure.
-	\item Increased collaboration and communication between Security and other Operations teams by providing subject matter expertise on new projects.
-	\item Coordinated third-party penetration test engagements and lead mitigation efforts based on test report findings.
+	\item Created and lead the Security Operations team of three people to oversee defensive security in the Operations department.
+	\item Lead a year long project to revamp Secure Shell (SSH) access across the company into Okta Advanced Server Access (Okta ASA), an Okta-based zero-trust service. 
+	\item Collaborated with senior engineering leadership to implement secure best practices during Google Cloud Platform (GCP) adoption and migration.
+	\item Implemented a security logging, monitoring, and alerting pipeline in GCP using Forseti, Cloud Security Command Center (CSCC), and other GCP managed services.
+	\item Coordinated annual third-party penetration test engagements and lead mitigation efforts across departments based on test report findings.
 	\item Commanded security incident responses and assisted on-call teams on security issues.
 \end{itemize}
 \begin{tabular}{l|l}
 {Jan '15 - Feb '18} & Systems Engineer - MailChimp, Atlanta\\
 \end{tabular}
 \begin{itemize}[noitemsep]
-	\item Scaled infrastructure, monitoring and tooling to support a magnitude increase in servers over three years.
-	%\item Migrated hundreds of hosted servers from Softlayer to collocated infrastructure to reduce security risk and operational expense.
-	%\item Oversaw build out of a user shard from server ordering, installation and configuration, to production code deployment and QA testing.
+	\item Scaled infrastructure, monitoring and tooling to support a 10 million doubling of customers in just over three years.
+	\item Migrated hundreds of hosted servers from Softlayer to collocated infrastructure to reduce security risk and operational expense.
+	\item Oversaw build out of a customer shard from ordering the approximately 50 servers, to software installation and configuration, production code deployment and QA testing.
+	\item Lead a five person team to perform a risk analysis against Spectre/Meltdown, plan the mitigation strategy, and execute it across the entire company.
 	\item Provided on-call support for infrastructure, internal services and public facing sites.
+	\item Routinely presented an 'Intro to Puppet' (https://github.com/jconard3/puppet\_demo) workshop for new engineers and junior developers.
 \end{itemize}
 
 %-----Projects-----%
-\section*{Projects}
-\subsubsection*{Okta Advanced Server Access Adoption for SSH Access}
-\begin{itemize}[noitemsep]
-	\item Enumerated shortcomings of existing Secure Shell (SSH) access solution, defined acceptance criteria for a new solution and researched potential solutions.
-	\item Identified Okta Advanced Server Access (Okta ASA), a zero-trust model solution, and evaluated it through a proof-of-concept test.
-	\item Lead the project team to roll ASA out company-wide and then to deprecate the previous solution.
-\end{itemize}
-\subsubsection*{Security Logging and Monitoring}
-\begin{itemize}[noitemsep]
-	\item Implemented security monitoring and alerting in Google Cloud Platform through Forseti and Cloud Security Command Center.
-	%\item Advised senior engineering leadership on security best practices during Google Cloud Platform (GCP) adoption.
-	\item Created an Elasticsearch Security Information and Event Management (SIEM) platform to aggregate security logs from software across the company.
-	\item Used ElastAlert to page and alert on-call teams of potential security incidents from SIEM logs.
-\end{itemize}
+%\section*{Projects}
+%\subsubsection*{Okta Advanced Server Access Adoption for SSH Access}
+%\begin{itemize}[noitemsep]
+%	\item Enumerated shortcomings of existing Secure Shell (SSH) access solution, defined acceptance criteria for a new solution and researched potential solutions.
+%	\item Identified Okta Advanced Server Access (Okta ASA), a zero-trust model solution, and evaluated it through a proof-of-concept test.
+%	\item Lead the project team to roll ASA out company-wide and then to deprecate the previous solution.
+%\end{itemize}
+%\subsubsection*{Security Logging and Monitoring}
+%\begin{itemize}[noitemsep]
+%	\item Implemented security monitoring and alerting in Google Cloud Platform through Forseti and Cloud Security Command Center.
+%	%\item Advised senior engineering leadership on security best practices during Google Cloud Platform (GCP) adoption.
+%	\item Created an Elasticsearch Security Information and Event Management (SIEM) platform to aggregate security logs from software across the company.
+%	\item Used ElastAlert to page and alert on-call teams of potential security incidents from SIEM logs.
+%\end{itemize}
 %\subsubsection*{Spectre/Meltdown Mitigation}
 %\begin{itemize}[noitemsep]
 %	\item Performed initial discovery and research of the Spectre/Meltdown vulnerabilities
@@ -92,9 +95,10 @@ I am seeking new opportunities to enable others to be more secure against ever-c
 %-----Skills-----%
 \section*{Skills}
 \begin{tabular}{rl}
-    Languages: & Go, Python, Bash, Puppet, C\\
-    Platforms: & CentOS, Ubuntu, Google Cloud Platform, Amazon Web Services\\
-    Tools: & Elasticsearch, Kubernetes, Docker, Git\\
+    Languages: & Go, Python, Bash, Puppet, Terraform, C\\
+    Platforms: & CentOS, Ubuntu, GCP, Amazon Web Services (AWS)\\
+	Software: & Elasticsearch (ES), Kubernetes, Docker, Git, Github, Jira\\
+	Security Tools: & auditd, OpenSSH, CVE/CVSS/NVD, GCP CSCC, Forseti, IAM, ES SIEM, Okta ASA, Vault
 \end{tabular}
 
 %-----Education-----%
